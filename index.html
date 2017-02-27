@@ -5,12 +5,14 @@
 
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <!-- Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- jQuery from CDN -->
 
 
@@ -35,9 +37,15 @@
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div class="col-md-4 box" id="a"></div>
+            <div class="col-md-4 box" id="b"></div>
+            <div class="col-md-4 box" id="c"></div>
+            <div class="col-md-4 box" id="d"></div>
+            <div class="col-md-4 box" id="e"></div>
+            <div class="col-md-4 box" id="f"></div>
+            <div class="col-md-4 box" id="g"></div>
+            <div class="col-md-4 box" id="h"></div>
+            <div class="col-md-4 box" id="i"></div>
           </div>
 
 
@@ -45,5 +53,8 @@
         </div>
       </div>
     </div>
+
+<button type="button" class="btn btn-primary" id="reload">Reset</button>
+
   </body>
 </html>
