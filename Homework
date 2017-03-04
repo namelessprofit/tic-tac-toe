@@ -1,0 +1,24 @@
+var appleString = "apple";
+var pineappleString = "pineapple";
+
+function letterCount(word) {
+    var results = {};
+    word = word.toLowerCase();
+    word = word.match(/[a-z]+/g).join("");
+    var wordLength = word.length;
+    for (var i = 0; i < word.length; i++) {
+        var char = word[i];
+        if (results.hasOwnProperty(char)) {
+            //increment value at char by 1
+            results[char]++;
+        } else {
+            results[char] = 1;
+        }
+
+    }
+    for (letterCount in results) {
+        results[letterCount] = results[letterCount] / wordLength;
+        return results;
+    };
+
+    //regex is going to separate the keys so .join will concat the string and eval as one string
